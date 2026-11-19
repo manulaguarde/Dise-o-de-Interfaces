@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kibble - Nutrición para mascotas</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <div id="pantalla-carga">
+  <img src="recursos/Loading_icon.gif" alt="Icono de carga animado">
+  <p>Cargando Kibble...</p>
+</div>
+  </div>
+  <!--<a href="https://commons.wikimedia.org/wiki/File:Loading_icon.gif">Ahm masum</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
+  <header class="encabezado">
+
+
+    <a href="#" class="logo">
+      <img src="recursos/logo_kibble.png" alt="logo_kibble" class="imagen-logo">
+      Kibble
+    </a>
+
+
+
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Buscar</a></li>
+        <li><a href="#">Comparar</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+
+
+    <a href="#" class="btn-perfil">Mi Perfil</a>
+  </header>
+  <main>
+
+    <section class="seccion-principal">
+
+
+      <article class="contenido">
+        <h1 class="texto-titulo">Descubre qué come realmente tu mascota</h1>
+        <p class="texto-subtitulo">
+          Analiza, compara e identifica la calidad de sus alimentos de forma sencilla e intuitiva.
+        </p>
+
+
+        <div class="caja-buscador">
+          <input type="text" class="input-buscar" placeholder="Busca por marca, producto...">
+          <button type="button" class="btn-escanear" title="Escanear producto">📷</button>
+          <button type="button" class="btn-buscar">Buscar</button>
+        </div>
+      </article>
+
+
+      <article class="imagen-principal">
+        <img src="recursos/gato_kibble.png" alt="" class="tarjeta-imagen-principal">
+      </article>
+    </section>
+
+    <!--
+    <section class="seccion-ult-productos">
+      <h2 class="titulo-ult-productos">Últimos productos analizados</h2>
+
+    
+      <div class="contenedor-tarjetas">
+        <article class="tarjeta-producto">
+          <div class="imagen-prod-texto">[ Imagen ]</div>
+          <span class="producto-nota">★ 4.8</span>
+          <h3 class="nombre-prod">Nombre del producto</h3>
+          <span class="categoria-prod">Bueno / Excelente</span>
+        </article>
+
+        <article class="tarjeta-producto">
+          <div class="imagen-prod-texto">[ Imagen ]</div>
+          <span class="producto-nota">★ 4.8</span>
+          <h3 class="nombre-prod">Nombre del producto</h3>
+          <span class="categoria-prod">Bueno / Excelente</span>
+        </article>
+
+        <article class="tarjeta-producto">
+          <div class="imagen-prod-texto">[ Imagen ]</div>
+          <span class="producto-nota">★ 4.8</span>
+          <h3 class="nombre-prod">Nombre del producto</h3>
+          <span class="categoria-prod">Bueno / Excelente</span>
+        </article>
+
+        <article class="tarjeta-producto tarjeta-ultima">
+          <div class="imagen-prod-texto">[ Imagen ]</div>
+          <span class="producto-nota">★ 4.8</span>
+          <h3 class="nombre-prod">Nombre del producto</h3>
+          <span class="categoria-prod">Bueno / Excelente</span>
+        </article>
+      </div>
+    </section>
+  </main>-->
+
+
+    <footer class="pie-pagina">
+      <div class="contenedor-footer">
+        <div class="footer-logo">
+          <img src="recursos/logo_kibble.png" alt="logo_kibble" class="imagen-logo">
+          <span class="texto-logo">Kibble</span>
+        </div>
+        <div class="redes-sociales">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+        <p class="copy-right">
+          © 2026 Kibble. Todos los derechos reservados. |
+          <a href="#">Contacto</a> |
+          <a href="#">Aviso Legal</a>
+        </p>
+        <p class="avisos">
+          Las imágenes e ilustraciones mostradas en esta web han sido creadas con Inteligencia Artificial.
+        </p>
+        <p class="avisos">Iconos vectoriales usados de la librería Bootstrap Icons (Licencia MIT).</p>
+        <p class="avisos">Icono de carga: <a href="https://commons.wikimedia.org/wiki/File:Loading_icon.gif"
+            target="_blank">Ahm masum</a>,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia
+          Commons.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Temporizador de 2 segundos (2000 ms) para ocultar la pantalla de carga
+      setTimeout(function () {
+        document.getElementById("pantalla-carga").style.display = "none";
+      }, 2000);
+    </script>
+
+</body>
+
+</html>

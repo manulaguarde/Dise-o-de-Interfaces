@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FFF8F6;
+  color: #3B1826;
+  min-height: 100vh;
+
+  /* Maquetación Grid por áreas */
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "cabecera cabecera"
+    "lateral  contenido"
+    "pie      pie";
+}
+
+/* 1. ÁREA CABECERA */
+.cabecera {
+  grid-area: cabecera;
+  background-color: #4A2033;
+  color: #FFFFFF;
+  padding: 24px 32px;
+  border-bottom: 4px solid #FB7185;
+}
+
+.cabecera h1 {
+  color: #FFE4E6;
+  margin: 0 0 6px 0;
+  font-size: 26px;
+}
+
+.cabecera p {
+  margin: 0;
+  font-size: 15px;
+  color: #FBCFE8;
+}
+
+/* 2. ÁREA MENÚ LATERAL */
+.lateral {
+  grid-area: lateral;
+  background-color: #FCE7F3;
+  padding: 24px 20px;
+  border-right: 1px solid #F9A8D4;
+}
+
+.lateral h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #831843;
+}
+
+.lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lateral li {
+  margin-bottom: 10px;
+}
+
+.lateral a {
+  text-decoration: none;
+  color: #4A2033;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #FBCFE8;
+}
+
+.lateral a:hover {
+  background-color: #F43F5E;
+  color: #FFFFFF;
+  border-color: #F43F5E;
+}
+
+/* 3. ÁREA CONTENIDO PRINCIPAL */
+.contenido {
+  grid-area: contenido;
+  padding: 32px;
+}
+
+.bloque-unidad {
+  margin-bottom: 40px;
+}
+
+.bloque-unidad h2 {
+  font-size: 20px;
+  color: #4A2033;
+  border-bottom: 2px solid #FBCFE8;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-actividad {
+  background-color: #FFFFFF;
+  border: 1px solid #FECDD3;
+  border-top: 4px solid #FB7185;
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(74, 32, 51, 0.06);
+}
+
+.etiqueta {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #FFE4E6;
+  color: #9F1239;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.tarjeta-actividad h3 {
+  margin: 24px 0 10px 0;
+  font-size: 18px;
+  color: #3B1826;
+}
+
+.tarjeta-actividad p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #6B3B4E;
+}
+
+.btn-ver {
+  display: inline-block;
+  text-align: center;
+  background-color: #E11D48;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+.btn-ver:hover {
+  background-color: #BE123C;
+}
+
+.proximamente {
+  border-top-color: #F9A8D4;
+  border-style: dashed;
+  background-color: #FFF1F2;
+  opacity: 0.8;
+}
+
+.proximamente .etiqueta {
+  background-color: #FCE7F3;
+  color: #831843;
+}
+
+/* 4. ÁREA PIE DE PÁGINA */
+.pie {
+  grid-area: pie;
+  background-color: #4A2033;
+  color: #FBCFE8;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+
+/* Adaptación para pantallas estrechas */
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cabecera"
+      "lateral"
+      "contenido"
+      "pie";
+  }
+}

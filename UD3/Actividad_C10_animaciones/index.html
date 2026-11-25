@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad C10 - Animaciones y transiciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Actividad con grid, multimedia y animaciones</h1>
+    </header>
+
+    <section class="hero">
+        <video class="video-fondo" autoplay muted loop playsinline>
+            <source src="recursos/video-gatito-kibble.mp4" type="video/mp4">
+            <source src="recursos/video-gatito-kibble.webm" type="video/webm">
+        </video>
+        <div class="hero-texto">
+            <h2>Bienvenido a Kibble</h2>
+            <p>Cuidamos la alimentación de tu mascota</p>
+        </div>
+    </section>
+
+    <aside>
+        <h3>Menu lateral</h3>
+        <ul>
+            <li><a href="#video-presentacion">Vídeo</a></li>
+            <li><a href="#reproductor">Audio</a></li>
+            <li><a href="#tarjetas">Tarjetas</a></li>
+            <li><a href="#pie">Pie de página</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="video-presentacion" class="caja-multimedia">
+            <h2>Vídeo de presentación</h2>
+            <video controls poster="recursos/poster-gatos.jpg">
+                <source src="recursos/video-gatos.mp4" type="video/mp4">
+                <source src="recursos/video-gatos.webm" type="video/webm">
+                Tu navegador es muy antiguo y no soporta la etiqueta de vídeo HTML5.
+            </video>
+        </section>
+
+        <section id="reproductor" class="caja-audio">
+            <h2>Bienvenida a Kibble</h2>
+            <audio controls>
+                <source src="recursos/musica-kibble.mp3" type="audio/mpeg">
+                <source src="recursos/musica-kibble.ogg" type="audio/ogg">
+                Tu navegador es muy antiguo y no soporta la etiqueta de audio HTML5.
+            </audio>
+        </section>
+
+        <div id="tarjetas" class="contenedor-tarjetas">
+            <!-- Primera tarjeta con animación @keyframes al cargar la página -->
+            <article class="tarjeta-producto tarjeta-animada">
+                <div class="imagen-prod-texto">[Imagen]</div>
+                <span class="producto-nota">★ 4.8</span>
+                <h3 class="nombre-prod">Pienso Salmón</h3>
+                <span class="categoria-prod">Excelente</span>
+                <button type="button" class="btn-tarjeta btn-transicion">Ver análisis</button>
+            </article>
+
+            <article class="tarjeta-producto tarjeta-animada">
+                <div class="imagen-prod-texto">[Imagen]</div>
+                <span class="producto-nota">★ 4.5</span>
+                <h3 class="nombre-prod">Paté Pollo</h3>
+                <span class="categoria-prod">Bueno</span>
+                <button type="button" class="btn-tarjeta btn-transicion">Ver análisis</button>
+            </article>
+
+            <article class="tarjeta-producto tarjeta-animada">
+                <div class="imagen-prod-texto">[Imagen]</div>
+                <span class="producto-nota">★ 4.9</span>
+                <h3 class="nombre-prod">Snacks Naturales</h3>
+                <span class="categoria-prod">Excelente</span>
+                <button type="button" class="btn-tarjeta btn-transicion">Ver análisis</button>
+            </article>
+
+            <article class="tarjeta-producto tarjeta-animada">
+                <div class="imagen-prod-texto">[Imagen]</div>
+                <span class="producto-nota">★ 4.2</span>
+                <h3 class="nombre-prod">Comida Húmeda</h3>
+                <span class="categoria-prod">Bueno</span>
+                <button type="button" class="btn-tarjeta btn-transicion">Ver análisis</button>
+            </article>
+        </div>
+    </main>
+
+    <footer id="pie">
+        <p><a href="">Instagram</a> | <a href="">Facebook</a> | <a href="">Contacto</a></p>
+        <p class="atribucion">
+            Music by <a href="https://pixabay.com/users/viacheslavstarostin-50153119/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=639229" target="_blank">Viacheslav Starostin</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=639229" target="_blank">Pixabay</a>
+        </p>
+        <p class="atribucion">
+            Vídeo de <a href="https://www.pexels.com/es-es/video/comida-pajaro-amor-gente-20736699/" target="_blank">Israyosoy S.</a> en Pexels
+        </p>
+    </footer>
+</body>
+</html>

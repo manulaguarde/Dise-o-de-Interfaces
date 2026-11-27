@@ -1,0 +1,36 @@
+
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    
+    /* Centra el texto tanto horizontal como verticalmente */
+   
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 15px;
+}
+
+span{
+    width: 100%;
+}
+
+button{
+    width: 100%;
+}
+
+.destacado {
+    background-color: aquamarine;
+}
